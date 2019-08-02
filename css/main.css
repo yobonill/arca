@@ -1,0 +1,78 @@
+/*General CSS*/
+    .success {
+        background-color: #29b12c !important;
+    }
+    .warning {
+        background-color: #ece531 !important;
+    }
+    .danger {
+        background-color: #e66868 !important;
+    }
+    .successText {
+        color: #29b12c;
+    }
+    .warningText {
+        color: #ece531;
+    }
+    .dangerText {
+        color: #e66868;
+    }
+/*General CSS*/
+
+/*Header CSS */
+    .side-button {
+        float: right;
+        margin-top: 10px;
+        margin-right: 20px;
+        background-color: transparent;
+        color: white;
+        border: 0px;
+    }
+/*Header CSS */
+
+/*Content CSS*/
+    .back {
+        font-size: 40px;
+        color:rgb(63,81,181) ;
+        float: left;
+    }
+    /*Login VIEW*/
+    
+    /*Login VIEW*/
+    /*Default VIEW */
+        /*buttons*/
+            .btn-big {
+                font-size: 20px; /* Change the font size of the text inside buttons */
+                margin: 10px;
+                width: 100%;
+            }
+            .big-fa {
+                font-size: 14em; /* Change the font size of the icons inside buttons */
+            }
+            .sm-fa {
+                font-size: 8em; /* Change the font size of the icons inside buttons */	
+            }
+            .big-submit {
+                font-size: 40px;
+            }
+            .btn-green {
+                background-color: rgb(4, 144, 65); /* Green color */
+                border-color: black;
+                color: white;
+            }
+            .btn-red {
+                background-color: red; /* Red color */
+                border-color: black;
+                color: white;
+            }
+            .btn-black:hover {
+                background-color: black;
+            }
+        /*buttons*/
+    /*Default VIEW */
+    /*Footer CSS */
+		footer {
+			padding-top: 40px;
+		}
+	/*Footer CSS */
+/*Content CSS*/

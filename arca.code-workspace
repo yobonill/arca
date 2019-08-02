@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "/opt/lampp/htdocs/projects/ordenesDeLotes"
+		},
+		{
+			"path": "/opt/lampp/htdocs/fridgecontrol"
+		}
+	],
+	"settings": {}
+}
