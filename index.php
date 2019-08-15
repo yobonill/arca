@@ -145,7 +145,7 @@
 						<?php endif ?>
 							
 					<?php endif ?>
-					<a class="navbar-brand"><?= $language['__INSTITUTION_NAME__'] ?></a>
+					<a class="navbar-brand"><img class="img-responsive"src="img/Logo.png" alt="<?= $language['__INSTITUTION_NAME__'] ?>"></a>
 				</div>
 			</nav>
 		</div>

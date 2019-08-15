@@ -19,56 +19,156 @@
                         </div>
                         <div class="col-md-4 col-sm-4"></div>
                     </div> <!-- Date -->
-					<div class="row"> <!-- Name, LastName -->
-						<div class="col-md-12"> 
-							<div class="col-md-6 col-sm-6">
-								<div class="form-group form-group-lg ">
-									<label for="nombreVisitante"><?= $language['__FORM_NOMBRE_VISITANTE__']?></label>
-									<input type="text" class="form-control text-center" name="nombreVisitante" id="nombreVisitante" placeholder="Ej: Juan Carlos" value="" required>
-								</div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-								<div class="form-group form-group-lg ">
-									<label for="apellidoVisitante"><?= $language['__FORM_APELLIDO_VISITANTE__']?></label>
-									<input type="text" class="form-control text-center" name="apellidoVisitante" id="apellidoVisitante" placeholder="Ej: Perez Santos" value="" required>
-								</div>
+					<div class="row"> <!-- OracionInicio, VerOracion1-3 -->
+						<div class="col-md-12 col-sm-12"> 
+							<div class="form-group form-group-lg ">
+								<label for="oracion"><?= $language['__FORM_ORACION_PROGRAMA__']?></label>
+								<input type="text" class="form-control text-center" name="oracion" id="oracion" placeholder="Juan Carlos*" value="" required>
 							</div>
 						</div> 
-					</div> <!-- Name, LastName -->
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="verOracion1" id="verOracion1*" placeholder="Juan 3:16-18*" value="" required>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="verOracion1" id="verOracion1" placeholder="Juan 3:16-18" value="">
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="verOracion1" id="verOracion1" placeholder="Juan 3:16-18" value="">
+							</div>
+						</div>
+					</div> <!-- OracionInicio, VerOracion1-3 -->
                     <br>
-					<div class="row"> <!-- Phone, Email -->
-						<div class="col-md-12"> 
-							<div class="col-md-6 col-sm-6">
-								<div class="form-group form-group-lg ">
-									<label for="telefonoVisitante"><?= $language['__FORM_TELEFONO_VISITANTE__']?></label>
-									<input type="number" class="form-control text-center" name="telefonoVisitante" id="telefonoVisitante" placeholder="Ej:8095882525" value="">
-								</div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-								<div class="form-group form-group-lg ">
-									<label for="correoVisitante"><?= $language['__FORM_CORREO_VISITANTE__']?></label>
-									<input type="email" class="form-control text-center" name="correoVisitante" id="correoVisitante" placeholder="Ej: fakeemail@gmail.com" value="">
-								</div>
+					<hr>
+					<div class="row"> <!-- Adoracion, Adoracion1-4 -->
+						<div class="col-md-12 col-sm-12"> 
+							<div class="form-group form-group-lg ">
+								<label for="adoracion"><?= $language['__FORM_ADORACION_PROGRAMA__']?></label>
+								<input type="text" class="form-control text-center" name="adoracion" id="adoracion" placeholder="Set o Mupa*" value="" required>
 							</div>
 						</div> 
-                    </div> <!-- Phone, Email  -->
-                    <div class="row"> <!-- Address, Comment -->
-						<div class="col-md-12"> 
-							<div class="col-md-12 col-sm-12">
-								<div class="form-group form-group-lg ">
-									<label for="direccionVisitante"><?= $language['__FORM_DIRECCION_VISITANTE__']?></label>
-									<input type="text" class="form-control text-center" name="direccionVisitante" id="direccionVisitante" placeholder="Ej: Calle25, #11, villaCarmen, SDE" value="">
-								</div>
-                            </div>
-                            <div class="col-md-12 col-sm-12">
-								<div class="form-group form-group-lg ">
-									<label for="comentarioVisitante"><?= $language['__FORM_COMENTARIO_VISITANTE__']?></label>
-									<input type="text" class="form-control text-center" name="comentarioVisitante" id="comentarioVisitante" placeholder="Ej: un amigo(pedro), facebook, youtube, otro" value="" required>
-								</div>
+						<div class="col-md-3 col-sm-3">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="adoracion1" id="adoracion1" placeholder="Adorar" value="">
 							</div>
-						</div> 
-					</div> <!-- Address, Comment -->
+						</div>
+						<div class="col-md-3 col-sm-3">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="adoracion2" id="adoracion2" placeholder="Adorar" value="">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="adoracion3" id="adoracion3" placeholder="Adorar" value="">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="adoracion4" id="adoracion4" placeholder="Adorar" value="">
+							</div>
+						</div>
+					</div> <!-- Adoracion, Adoracion1-4 -->
 					<br>
+					<hr>
+					<div class="row"> <!-- Anuncios, Anuncio1-6 -->
+						<div class="col-md-12 col-sm-12"> 
+							<div class="form-group form-group-lg ">
+								<label for="anuncios"><?= $language['__FORM_ANUNCIOS_PROGRAMA__']?></label>
+								<input type="text" class="form-control text-center" name="anuncios" id="anuncios" placeholder="Juan Ignacio*" value="" required>
+							</div>
+						</div> 
+						<div class="col-md-2 col-sm-4">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="anuncio1" id="anuncio1" placeholder="Actividad 1*" value="" required>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="anuncio2" id="anuncio2" placeholder="Actividad 2*" value="" required>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="anuncio3" id="anuncio3" placeholder="Actividad 3*" value="" required>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="anuncio4" id="anuncio4" placeholder="Actividad 4" value="">
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="anuncio5" id="anuncio5" placeholder="Actividad 5" value="">
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="anuncio6" id="anuncio6" placeholder="Actividad 6" value="">
+							</div>
+						</div>
+					</div> <!-- Anuncios, Anuncio1-6 -->
+					<br>
+					<hr>
+					<div class="row"> <!-- Ofrenda, VerOfrenda1 -->
+						<div class="col-md-12 col-sm-12"> 
+							<div class="form-group form-group-lg ">
+								<label for="ofrenda"><?= $language['__FORM_OFRENDA_PROGRAMA__']?></label>
+								<input type="text" class="form-control text-center" name="ofrenda" id="ofrenda" placeholder="Juan Carlos*" value="" required>
+							</div>
+						</div> 
+						<div class="col-md-4 col-sm-4"></div>
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="verOfrenda1" id="verOfrenda1" placeholder="Juan 3:16-18*" value="" required>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4"></div>
+					</div> <!-- Ofrenda, VerOfrenda1 -->
+                    <br>
+					<hr>
+					<div class="row"> <!-- Predica, Versiculo1-6 -->
+						<div class="col-md-12 col-sm-12"> 
+							<div class="form-group form-group-lg ">
+								<label for="predica"><?= $language['__FORM_PREDICA_PROGRAMA__']?></label>
+								<input type="text" class="form-control text-center" name="predica" id="predica" placeholder="Ramon Hernandez*" value="" required>
+							</div>
+						</div> 
+						<div class="col-md-2 col-sm-4">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="verPredica1" id="verPredica1" placeholder="Ver Clave*" value="" required>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="verPredica2" id="verPredica2" placeholder="Juan 3:16-18" value="">
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="verPredica3" id="verPredica3" placeholder="Juan 3:16-18" value="">
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="verPredica4" id="verPredica4" placeholder="Juan 3:16-18" value="">
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="verPredica5" id="verPredica5" placeholder="Juan 3:16-18" value="">
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-4">
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="verPredica6" id="verPredica6" placeholder="Juan 3:16-18" value="">
+							</div>
+						</div>
+					</div> <!-- Anuncios, Anuncio1-6 -->
 					<div class="row">
 						<div class="col-md-12 text-center">
 							<button type="submit" class="btn btn-primary btn-lg" id="submit"><?= $language['__FORMS_SUBMIT__']?></button>

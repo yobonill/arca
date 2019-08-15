@@ -53,6 +53,11 @@
 
 					//Programa View
 						'__TITLE_VISITANTE__' => 'Formulario de visitantes',
+						'__FORM_ORACION_PROGRAMA__' => 'Oracion de Inicio',
+						'__FORM_ADORACION_PROGRAMA__' => 'Grupo de adoracion',
+						'__FORM_ANUNCIOS_PROGRAMA__' => 'Anuncios',
+						'__FORM_OFRENDA_PROGRAMA__' => 'Ofrenda',
+						'__FORM_PREDICA_PROGRAMA__' => 'Predica',
 					//Programa View
 
 					//Reports View

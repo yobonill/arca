@@ -23,6 +23,12 @@
     .title h1{
         font-size:50px;
     }
+    hr {
+        border-top: 1px solid #004b04;
+    }
+    .navbar-brand img {
+        height: 100%;
+    }
     /*General CSS*/
 
     /*Header CSS */
@@ -128,6 +134,9 @@
     .title h1{
         font-size:50px;
     }
+    hr {
+        border-top: 1px solid #004b04;
+    }
     /*General CSS*/
 
     /*Header CSS */
@@ -138,6 +147,10 @@
         background-color: transparent;
         color: white;
         border: 0px;
+    }
+    .navbar-brand img {
+        height: 250%;
+        padding-bottom:5px;
     }
     /*Header CSS */
 
