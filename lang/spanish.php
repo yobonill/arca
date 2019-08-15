@@ -5,9 +5,10 @@
 		return array (
 			//Web title, brand, sign and general text
 				'example' => 'Ejemplo',
-				'__TITLE_APPNAME__' => 'Plantilla de Sistema',
-				'__INSTITUTION_NAME__' => 'Institucion',
+				'__TITLE_APPNAME__' => 'Iglesia Arca de Jesus',
+				'__INSTITUTION_NAME__' => 'Arca de Jesus',
 				'__SIGN__' => 'Creado por Yorki Bonilla, Toda la gloria es de Dios',
+				'__FORMS_SUBMIT__' => 'Aceptar',
 			//Web title, brand, sign and general text
 
 			//Modal texts
@@ -35,7 +36,24 @@
 					//Default View
 						'__BUTTON1__' => 'Button1',
 						'__BUTTON2__' => 'Button2',
+						'__VISITANTES__' => 'Registrar Visitante',
+						'__PROGRAMA__' => 'Programa de Culto',
 					//Default View
+
+					//Visitante View
+						'__TITLE_VISITANTE__' => 'Formulario de visitantes',
+						'__FORM_FECHA_VISITANTE__' => 'Fecha',
+						'__FORM_NOMBRE_VISITANTE__' => 'Nombre',
+						'__FORM_APELLIDO_VISITANTE__' => 'Apellido',
+						'__FORM_CORREO_VISITANTE__' => 'Correo',
+						'__FORM_TELEFONO_VISITANTE__' => 'Telefono',
+						'__FORM_DIRECCION_VISITANTE__' => 'Direccion',
+						'__FORM_COMENTARIO_VISITANTE__' => 'Como supo de nuestra iglesia',
+					//Visitante View
+
+					//Programa View
+						'__TITLE_VISITANTE__' => 'Formulario de visitantes',
+					//Programa View
 
 					//Reports View
 						
@@ -43,7 +61,6 @@
 
 					//Admin View	
 						'__TITLE_ADMIN__' => 'Opciones de administrador',
-						'__FORMS_SUBMIT_ADMIN__' => 'Aceptar',
 						//ADDUSER
 							'__TITLE_ADDUSERS_ADMIN__' => 'Agregar Usuario',
 							//ADDUSERMODAL

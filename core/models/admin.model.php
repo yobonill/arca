@@ -8,6 +8,42 @@
 	//Define Timezone
 
 	//------------Function that allows us to add an user to the database------------
+		function agregar_visitante() {
+
+			//Variables used for the query
+				$recordDate = date('Y-m-d h:i:s');
+				$visitDate = date('Y-m-d');
+				$followupDate = date('Y-m-d');
+				$name = db_quote(strtoupper($_POST['nombreVisitante']));
+				$lastName = db_quote(strtoupper($_POST['apellidoVisitante']));
+				isset($_POST['telefonoVisitante']) ? $phone = db_quote(strtoupper($_POST['telefonoVisitante'])) : $phone = "";
+				isset($_POST['correoVisitante']) ? $email = db_quote(strtoupper($_POST['correoVisitante'])) : $email = "";
+				isset($_POST['direccionVisitante']) ? $address = db_quote(strtoupper($_POST['direccionVisitante'])) : $address = "";
+				$comment = db_quote(strtoupper($_POST['comentarioVisitante']));
+
+			//Variables used for the query
+
+			//Create a variable containing the query that inserts the user into the database
+				$query = "INSERT INTO visitantes (nombre, apellido, telefono, correo, direccion, fecha_registro, fecha_ult_visita, fecha_seguimiento, comentario) VALUES ('$name','$lastName', '$phone', '$email', '$address', '$recordDate', '$visitDate','$followupDate','$comment')";
+			//Create a variable containing the query that inserts the user into the database
+
+			//Create a variable that runs the query
+				$result = db_query($query);
+			//Create a variable that runs the query
+
+			//Check if the query ran correctly, if not return the error
+			if($result === false) {
+				$error = db_error();
+				echo $error;
+				echo $name;
+			} else {
+				return $result;
+			}
+			//Check if the query ran correctly, if not return the error
+		}
+	//------------Function that allows us to add an user to the database------------
+
+	//------------Function that allows us to add an user to the database------------
 		function add_user() {
 			// $password = hash('sha256', $pass); Example of encripting a password
 
@@ -87,222 +123,6 @@
 			//Check if the query ran correctly, if not return the error
 		}
 	//------------Function to get all the users from database ------------
-
-	//------------Function that allows us to add a team to the database------------
-		function add_team() {
-			//Variables used for the query
-				$teamName = db_quote($_POST['teamName']);
-			//Variables used for the query
-
-			//Create a variable containing the query that inserts the team into the database
-				$query = "INSERT INTO team (name) VALUES ('$teamName')";
-			//Create a variable containing the query that inserts the team into the database
-
-			//Create a variable that runs the query
-				$result = db_query($query);
-			//Create a variable that runs the query
-
-			//Check if the query ran correctly, if not return the error
-			if($result === false) {
-				$error = db_error();
-				echo $error;
-			} else {
-				return $result;
-			}
-			//Check if the query ran correctly, if not return the error
-		}
-	//------------Function that allows us to add a team to the database------------
-
-	//------------Function that allows us to delete a team from the database------------
-		function delete_team() {
-
-			//Variables used for the query
-				$id_team = db_quote($_POST['id_team']);
-			//Variables used for the query
-
-			//Create a variable containing the query that inserts the user into the database
-				$query = "DELETE FROM team WHERE id_team = '$id_team'";
-			//Create a variable containing the query that inserts the user into the database
-
-			//Create a variable that runs the query
-				$result = db_query($query);
-			//Create a variable that runs the query
-
-			//Check if the query ran correctly, if not return the error
-			if($result === false) {
-				$error = db_error();
-				echo $error;
-			} else {
-				return $result;
-			}
-			//Check if the query ran correctly, if not return the error
-		}
-	//------------Function that allows us to delete a team from the database------------
-
-	//------------Function to get all the team from database ------------
-		function select_team(){
-			//Create a variable that contains the query that log in the page
-				$query = "SELECT * FROM team";
-			//Create a variable that contains the query that log in the page
-
-			//Run the query and assign it to the variable result
-				$result = db_select($query);
-			//Run the query and assign it to the variable result
-
-			//Check if the query ran correctly, if not return the error
-				if($result === false) {
-					$error = db_error();
-					echo $error;
-				} else {
-					return $result;
-				}
-			//Check if the query ran correctly, if not return the error
-		}
-	//------------Function to get all the team from database ------------
-
-	//------------Function that allows us to add a supervisor to the database------------
-		function add_supervisor() {
-			//Variables used for the query
-				$supervisorName = db_quote($_POST['supervisorName']);
-			//Variables used for the query
-
-			//Create a variable containing the query that inserts the supervisor into the database
-				$query = "INSERT INTO supervisor (name) VALUES ('$supervisorName')";
-			//Create a variable containing the query that inserts the supervisor into the database
-
-			//Create a variable that runs the query
-				$result = db_query($query);
-			//Create a variable that runs the query
-
-			//Check if the query ran correctly, if not return the error
-			if($result === false) {
-				$error = db_error();
-				echo $error;
-			} else {
-				return $result;
-			}
-			//Check if the query ran correctly, if not return the error
-		}
-	//------------Function that allows us to add a supervisor to the database------------
-
-	//------------Function that allows us to delete a supervisor from the database------------
-		function delete_supervisor() {
-
-			//Variables used for the query
-				$id_supervisor = db_quote($_POST['id_supervisor']);
-			//Variables used for the query
-
-			//Create a variable containing the query that inserts the user into the database
-				$query = "DELETE FROM supervisor WHERE id_supervisor = '$id_supervisor'";
-			//Create a variable containing the query that inserts the user into the database
-
-			//Create a variable that runs the query
-				$result = db_query($query);
-			//Create a variable that runs the query
-
-			//Check if the query ran correctly, if not return the error
-			if($result === false) {
-				$error = db_error();
-				echo $error;
-			} else {
-				return $result;
-			}
-			//Check if the query ran correctly, if not return the error
-		}
-	//------------Function that allows us to delete a supervisor from the database------------
-
-	//------------Function to get all the supervisor from database ------------
-		function select_supervisor(){
-			//Create a variable that contains the query that log in the page
-				$query = "SELECT * FROM supervisor";
-			//Create a variable that contains the query that log in the page
-
-			//Run the query and assign it to the variable result
-				$result = db_select($query);
-			//Run the query and assign it to the variable result
-
-			//Check if the query ran correctly, if not return the error
-				if($result === false) {
-					$error = db_error();
-					echo $error;
-				} else {
-					return $result;
-				}
-			//Check if the query ran correctly, if not return the error
-		}
-	//------------Function to get all the supervisor from database ------------
-
-	//------------Function that allows us to add a logador to the database------------
-		function add_logador() {
-			//Variables used for the query
-				$logadorName = db_quote($_POST['logadorName']);
-			//Variables used for the query
-
-			//Create a variable containing the query that inserts the logador into the database
-				$query = "INSERT INTO logador (name) VALUES ('$logadorName')";
-			//Create a variable containing the query that inserts the logador into the database
-
-			//Create a variable that runs the query
-				$result = db_query($query);
-			//Create a variable that runs the query
-
-			//Check if the query ran correctly, if not return the error
-			if($result === false) {
-				$error = db_error();
-				echo $error;
-			} else {
-				return $result;
-			}
-			//Check if the query ran correctly, if not return the error
-		}
-	//------------Function that allows us to add a logador to the database------------
-
-	//------------Function that allows us to delete a logador from the database------------
-		function delete_logador() {
-
-			//Variables used for the query
-				$id_logador = db_quote($_POST['id_logador']);
-			//Variables used for the query
-
-			//Create a variable containing the query that inserts the user into the database
-				$query = "DELETE FROM logador WHERE id_logador = '$id_logador'";
-			//Create a variable containing the query that inserts the user into the database
-
-			//Create a variable that runs the query
-				$result = db_query($query);
-			//Create a variable that runs the query
-
-			//Check if the query ran correctly, if not return the error
-			if($result === false) {
-				$error = db_error();
-				echo $error;
-			} else {
-				return $result;
-			}
-			//Check if the query ran correctly, if not return the error
-		}
-	//------------Function that allows us to delete a logador from the database------------
-
-	//------------Function to get all the logador from database ------------
-		function select_logador(){
-			//Create a variable that contains the query that log in the page
-				$query = "SELECT * FROM logador";
-			//Create a variable that contains the query that log in the page
-
-			//Run the query and assign it to the variable result
-				$result = db_select($query);
-			//Run the query and assign it to the variable result
-
-			//Check if the query ran correctly, if not return the error
-				if($result === false) {
-					$error = db_error();
-					echo $error;
-				} else {
-					return $result;
-				}
-			//Check if the query ran correctly, if not return the error
-		}
-	//------------Function to get all the logador from database ------------
 
 	//------------Function that allows us to add an user to the database------------
 		function edit_user() {

@@ -6,14 +6,12 @@
 			</div>
 		</div>
 		<div class="row">
-			<?php //if (isDispatcher()): ?>
-				<div class="col-md-6">
-					<a href="#"><button type="button" class="btn btn-default btn-big"><i class="fa fa-keyboard-o big-fa" aria-hidden="true"> </i> <br><?= $language["__BUTTON1__"]?></button></a>
-				</div>
-				<div class="col-md-6">
-					<a href="?view=inventory"><button type="button" class="btn btn-default btn-big"><i class="fa fa-book big-fa" aria-hidden="true"> </i> <br><?= $language["__BUTTON2__"]?></button></a>
-				</div>
-			<?php //endif ?>	
+			<div class="col-md-6 col-sm-12">
+				<a href="?view=visitante"><button type="button" class="btn btn-default btn-big"><i class="fa fa-users big-fa" aria-hidden="true"> </i> <br><?= $language["__VISITANTES__"]?></button></a>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<a href="?view=programa"><button type="button" class="btn btn-default btn-big"><i class="fa fa-list-alt big-fa" aria-hidden="true"> </i> <br><?= $language["__PROGRAMA__"]?></button></a>
+			</div>
 		</div>
 	</div>
 </div>

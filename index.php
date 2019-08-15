@@ -29,10 +29,12 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang='es'>
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="mobile-web-app-capable" content="yes">
 	<title><?=$language ['__TITLE_APPNAME__'] ?></title>
 	<!-- CSS AND FONTS -->
 		<!-- Font-awesome CSS -->
@@ -80,9 +82,17 @@
 				}
 			}
 		?>
-		<!--SweetAlert-->
-			<script src="js/sweetalert.min.js"></script>
-		<!--SweetAlert-->
+		
+		<?php
+			if(isset($_GET['msj'])){
+				?>
+					<!--SweetAlert-->
+						<script src="js/sweetalert.min.js"></script>
+					<!--SweetAlert-->
+				<?php
+				
+			}
+		?>
 
 		<!-- Bootstrap JavaScript -->
 			<script src="js/bootstrap.min.js"></script>
