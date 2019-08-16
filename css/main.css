@@ -88,6 +88,9 @@
         #visitante label{
             font-size: 50px;
         }
+        #visitante .orden label{
+            font-size: 20px;
+        }
         #visitante .form-group-lg .form-control {
             height: 80px;
             font-size: 25px;
@@ -200,6 +203,9 @@
         #visitante label{
             font-size: 50px;
         }
+        #visitante .orden label{
+            font-size: 20px;
+        }
         #visitante .form-group-lg .form-control {
             height: 80px;
             font-size: 25px;
@@ -214,7 +220,7 @@
         #visitante h1{
             margin-top: 0px;
         }
-        
+ 
     /*VISITANTES VIEW */
     /*Footer CSS */
         footer {

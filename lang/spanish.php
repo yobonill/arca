@@ -58,6 +58,12 @@
 						'__FORM_ANUNCIOS_PROGRAMA__' => 'Anuncios',
 						'__FORM_OFRENDA_PROGRAMA__' => 'Ofrenda',
 						'__FORM_PREDICA_PROGRAMA__' => 'Predica',
+						'__FORM_EXTRA_PROGRAMA__' => 'Extras',
+						'__FORM_ORDEN_PROGRAMA__' => 'Orden de Ejecucion',
+						'__FORM_EXTRA2_PROGRAMA__' => 'Extras 2',
+						'__FORM_EXTRA3_PROGRAMA__' => 'Extras 3',
+						'__FORM_EXTRA4_PROGRAMA__' => 'Extras 4',
+						'__FORM_NOAPLICA_PROGRAMA__' => 'No aplica',
 					//Programa View
 
 					//Reports View

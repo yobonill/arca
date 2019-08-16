@@ -131,6 +131,35 @@
 					</div> <!-- Ofrenda, VerOfrenda1 -->
                     <br>
 					<hr>
+					<div class="row"> <!-- Extra -->
+						<h1><?= $language['__FORM_EXTRA_PROGRAMA__']?></h1>
+						<div class="col-md-6 col-sm-6 orden"> 
+							<label for="extra1" class="orden">1</label>
+							<div class="form-group form-group-lg ">	
+								<input type="text" class="form-control text-center" name="extra1" id="extra1" placeholder="Danza especial" value="">
+							</div>
+						</div> 
+						<div class="col-md-6 col-sm-6 orden"> 
+							<label for="extra2" class="orden">2</label>
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="extra2" id="extra2" placeholder="Presentacion de bebe" value="">
+							</div>
+						</div> 
+						<div class="col-md-6 col-sm-6 orden"> 
+							<label for="extra3" class="orden">3</label>
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="extra3" id="extra3" placeholder="Video" value="">
+							</div>
+						</div> 
+						<div class="col-md-6 col-sm-6 orden"> 
+							<label for="extra4">4</label>
+							<div class="form-group form-group-lg ">
+								<input type="text" class="form-control text-center" name="extra4" id="extra4" placeholder="Drama" value="">
+							</div>
+						</div> 
+					</div> <!-- Extra -->
+					<br>
+					<hr>
 					<div class="row"> <!-- Predica, Versiculo1-6 -->
 						<div class="col-md-12 col-sm-12"> 
 							<div class="form-group form-group-lg ">
@@ -169,6 +198,166 @@
 							</div>
 						</div>
 					</div> <!-- Anuncios, Anuncio1-6 -->
+					<hr>
+					<br>
+					<hr>
+					<div class="row orden"> <!-- Orden -->
+						<h1><?= $language['__FORM_ORDEN_PROGRAMA__']?></h1>
+						<div class="col-md-3 col-sm-4">
+							<label for="orden1">1</label>
+							<select name="orden1" id="orden1" class="form-control" required="required">
+								<option value="noaplica"><?= $language['__FORM_NOAPLICA_PROGRAMA__']?></option>
+								<option value="oracion" selected><?= $language['__FORM_ORACION_PROGRAMA__']?></option>
+								<option value="adoracion"><?= $language['__FORM_ADORACION_PROGRAMA__']?></option>
+								<option value="anuncios"><?= $language['__FORM_ANUNCIOS_PROGRAMA__']?></option>
+								<option value="ofrenda"><?= $language['__FORM_OFRENDA_PROGRAMA__']?></option>
+								<option value="predica"><?= $language['__FORM_PREDICA_PROGRAMA__']?></option>
+								<option value="extra1"><?= $language['__FORM_EXTRA_PROGRAMA__']?></option>
+								<option value="extra2"><?= $language['__FORM_EXTRA2_PROGRAMA__']?></option>
+								<option value="extra3"><?= $language['__FORM_EXTRA3_PROGRAMA__']?></option>
+								<option value="extra4"><?= $language['__FORM_EXTRA4_PROGRAMA__']?></option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<label for="orden2">2</label>
+							<select name="orden2" id="orden2" class="form-control" required="required">
+								<option value="noaplica"><?= $language['__FORM_NOAPLICA_PROGRAMA__']?></option>
+								<option value="oracion"><?= $language['__FORM_ORACION_PROGRAMA__']?></option>
+								<option value="adoracion" selected><?= $language['__FORM_ADORACION_PROGRAMA__']?></option>
+								<option value="anuncios"><?= $language['__FORM_ANUNCIOS_PROGRAMA__']?></option>
+								<option value="ofrenda"><?= $language['__FORM_OFRENDA_PROGRAMA__']?></option>
+								<option value="predica"><?= $language['__FORM_PREDICA_PROGRAMA__']?></option>
+								<option value="extra1"><?= $language['__FORM_EXTRA_PROGRAMA__']?></option>
+								<option value="extra2"><?= $language['__FORM_EXTRA2_PROGRAMA__']?></option>
+								<option value="extra3"><?= $language['__FORM_EXTRA3_PROGRAMA__']?></option>
+								<option value="extra4"><?= $language['__FORM_EXTRA4_PROGRAMA__']?></option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<label for="orden3">3</label>
+							<select name="orden3" id="orden3" class="form-control" required="required">
+								<option value="noaplica"><?= $language['__FORM_NOAPLICA_PROGRAMA__']?></option>
+								<option value="oracion"><?= $language['__FORM_ORACION_PROGRAMA__']?></option>
+								<option value="adoracion"><?= $language['__FORM_ADORACION_PROGRAMA__']?></option>
+								<option value="anuncios" selected><?= $language['__FORM_ANUNCIOS_PROGRAMA__']?></option>
+								<option value="ofrenda"><?= $language['__FORM_OFRENDA_PROGRAMA__']?></option>
+								<option value="predica"><?= $language['__FORM_PREDICA_PROGRAMA__']?></option>
+								<option value="extra1"><?= $language['__FORM_EXTRA_PROGRAMA__']?></option>
+								<option value="extra2"><?= $language['__FORM_EXTRA2_PROGRAMA__']?></option>
+								<option value="extra3"><?= $language['__FORM_EXTRA3_PROGRAMA__']?></option>
+								<option value="extra4"><?= $language['__FORM_EXTRA4_PROGRAMA__']?></option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<label for="orden4">4</label>
+							<select name="orden4" id="orden4" class="form-control" required="required">
+								<option value="noaplica"><?= $language['__FORM_NOAPLICA_PROGRAMA__']?></option>
+								<option value="oracion"><?= $language['__FORM_ORACION_PROGRAMA__']?></option>
+								<option value="adoracion"><?= $language['__FORM_ADORACION_PROGRAMA__']?></option>
+								<option value="anuncios"><?= $language['__FORM_ANUNCIOS_PROGRAMA__']?></option>
+								<option value="ofrenda" selected><?= $language['__FORM_OFRENDA_PROGRAMA__']?></option>
+								<option value="predica"><?= $language['__FORM_PREDICA_PROGRAMA__']?></option>
+								<option value="extra1"><?= $language['__FORM_EXTRA_PROGRAMA__']?></option>
+								<option value="extra2"><?= $language['__FORM_EXTRA2_PROGRAMA__']?></option>
+								<option value="extra3"><?= $language['__FORM_EXTRA3_PROGRAMA__']?></option>
+								<option value="extra4"><?= $language['__FORM_EXTRA4_PROGRAMA__']?></option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<label for="orden5">5</label>
+							<select name="orden5" id="orden5" class="form-control" required="required">
+								<option value="noaplica"><?= $language['__FORM_NOAPLICA_PROGRAMA__']?></option>
+								<option value="oracion"><?= $language['__FORM_ORACION_PROGRAMA__']?></option>
+								<option value="adoracion"><?= $language['__FORM_ADORACION_PROGRAMA__']?></option>
+								<option value="anuncios"><?= $language['__FORM_ANUNCIOS_PROGRAMA__']?></option>
+								<option value="ofrenda"><?= $language['__FORM_OFRENDA_PROGRAMA__']?></option>
+								<option value="predica" selected><?= $language['__FORM_PREDICA_PROGRAMA__']?></option>
+								<option value="extra1"><?= $language['__FORM_EXTRA_PROGRAMA__']?></option>
+								<option value="extra2"><?= $language['__FORM_EXTRA2_PROGRAMA__']?></option>
+								<option value="extra3"><?= $language['__FORM_EXTRA3_PROGRAMA__']?></option>
+								<option value="extra4"><?= $language['__FORM_EXTRA4_PROGRAMA__']?></option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<label for="orden6">6</label>
+							<select name="orden6" id="orden6" class="form-control">
+								<option value="noaplica" selected><?= $language['__FORM_NOAPLICA_PROGRAMA__']?></option>
+								<option value="oracion"><?= $language['__FORM_ORACION_PROGRAMA__']?></option>
+								<option value="adoracion"><?= $language['__FORM_ADORACION_PROGRAMA__']?></option>
+								<option value="anuncios"><?= $language['__FORM_ANUNCIOS_PROGRAMA__']?></option>
+								<option value="ofrenda"><?= $language['__FORM_OFRENDA_PROGRAMA__']?></option>
+								<option value="predica"><?= $language['__FORM_PREDICA_PROGRAMA__']?></option>
+								<option value="extra1"><?= $language['__FORM_EXTRA_PROGRAMA__']?></option>
+								<option value="extra2"><?= $language['__FORM_EXTRA2_PROGRAMA__']?></option>
+								<option value="extra3"><?= $language['__FORM_EXTRA3_PROGRAMA__']?></option>
+								<option value="extra4"><?= $language['__FORM_EXTRA4_PROGRAMA__']?></option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<label for="orden7">7</label>
+							<select name="orden7" id="orden7" class="form-control" required="required">
+								<option value="noaplica" selected><?= $language['__FORM_NOAPLICA_PROGRAMA__']?></option>
+								<option value="oracion"><?= $language['__FORM_ORACION_PROGRAMA__']?></option>
+								<option value="adoracion"><?= $language['__FORM_ADORACION_PROGRAMA__']?></option>
+								<option value="anuncios"><?= $language['__FORM_ANUNCIOS_PROGRAMA__']?></option>
+								<option value="ofrenda"><?= $language['__FORM_OFRENDA_PROGRAMA__']?></option>
+								<option value="predica"><?= $language['__FORM_PREDICA_PROGRAMA__']?></option>
+								<option value="extra1"><?= $language['__FORM_EXTRA_PROGRAMA__']?></option>
+								<option value="extra2"><?= $language['__FORM_EXTRA2_PROGRAMA__']?></option>
+								<option value="extra3"><?= $language['__FORM_EXTRA3_PROGRAMA__']?></option>
+								<option value="extra4"><?= $language['__FORM_EXTRA4_PROGRAMA__']?></option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<label for="orden8">8</label>
+							<select name="orden8" id="orden8" class="form-control" required="required">
+								<option value="noaplica" selected><?= $language['__FORM_NOAPLICA_PROGRAMA__']?></option>
+								<option value="oracion"><?= $language['__FORM_ORACION_PROGRAMA__']?></option>
+								<option value="adoracion"><?= $language['__FORM_ADORACION_PROGRAMA__']?></option>
+								<option value="anuncios"><?= $language['__FORM_ANUNCIOS_PROGRAMA__']?></option>
+								<option value="ofrenda"><?= $language['__FORM_OFRENDA_PROGRAMA__']?></option>
+								<option value="predica"><?= $language['__FORM_PREDICA_PROGRAMA__']?></option>
+								<option value="extra1"><?= $language['__FORM_EXTRA_PROGRAMA__']?></option>
+								<option value="extra2"><?= $language['__FORM_EXTRA2_PROGRAMA__']?></option>
+								<option value="extra3"><?= $language['__FORM_EXTRA3_PROGRAMA__']?></option>
+								<option value="extra4"><?= $language['__FORM_EXTRA4_PROGRAMA__']?></option>
+							</select>
+						</div>
+						<div class="col-md-3"></div>
+						<div class="col-md-3">
+							<label for="orden9">9</label>
+							<select name="orden9" id="orden9" class="form-control" required="required">
+								<option value="noaplica" selected><?= $language['__FORM_NOAPLICA_PROGRAMA__']?></option>
+								<option value="oracion"><?= $language['__FORM_ORACION_PROGRAMA__']?></option>
+								<option value="adoracion"><?= $language['__FORM_ADORACION_PROGRAMA__']?></option>
+								<option value="anuncios"><?= $language['__FORM_ANUNCIOS_PROGRAMA__']?></option>
+								<option value="ofrenda"><?= $language['__FORM_OFRENDA_PROGRAMA__']?></option>
+								<option value="predica"><?= $language['__FORM_PREDICA_PROGRAMA__']?></option>
+								<option value="extra1"><?= $language['__FORM_EXTRA_PROGRAMA__']?></option>
+								<option value="extra2"><?= $language['__FORM_EXTRA2_PROGRAMA__']?></option>
+								<option value="extra3"><?= $language['__FORM_EXTRA3_PROGRAMA__']?></option>
+								<option value="extra4"><?= $language['__FORM_EXTRA4_PROGRAMA__']?></option>
+							</select>
+						</div>
+						<div class="col-md-3">
+							<label for="orden10">10</label>
+							<select name="orden10" id="orden10" class="form-control" required="required">
+								<option value="noaplica" selected><?= $language['__FORM_NOAPLICA_PROGRAMA__']?></option>
+								<option value="oracion"><?= $language['__FORM_ORACION_PROGRAMA__']?></option>
+								<option value="adoracion"><?= $language['__FORM_ADORACION_PROGRAMA__']?></option>
+								<option value="anuncios"><?= $language['__FORM_ANUNCIOS_PROGRAMA__']?></option>
+								<option value="ofrenda"><?= $language['__FORM_OFRENDA_PROGRAMA__']?></option>
+								<option value="predica"><?= $language['__FORM_PREDICA_PROGRAMA__']?></option>
+								<option value="extra1"><?= $language['__FORM_EXTRA_PROGRAMA__']?></option>
+								<option value="extra2"><?= $language['__FORM_EXTRA2_PROGRAMA__']?></option>
+								<option value="extra3"><?= $language['__FORM_EXTRA3_PROGRAMA__']?></option>
+								<option value="extra4"><?= $language['__FORM_EXTRA4_PROGRAMA__']?></option>
+							</select>
+						</div>
+						<div class="col-md-3"></div>
+					</div> <!-- Orden -->
+					<br>
+					<hr>
 					<div class="row">
 						<div class="col-md-12 text-center">
 							<button type="submit" class="btn btn-primary btn-lg" id="submit"><?= $language['__FORMS_SUBMIT__']?></button>
