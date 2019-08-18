@@ -61,9 +61,26 @@
 								</div>
                             </div>
                             <div class="col-md-12 col-sm-12">
-								<div class="form-group form-group-lg ">
+								<div class="col-md-12 col-sm-12">
 									<label for="comentarioVisitante"><?= $language['__FORM_COMENTARIO_VISITANTE__']?></label>
-									<input type="text" class="form-control text-center" name="comentarioVisitante" id="comentarioVisitante" placeholder="Ej: un amigo(pedro), facebook, youtube, otro" value="" required>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<div class="radio">
+										<input type="radio" name="comentarioVisitante" value="amigo" id="radio-one" class="form-radio" checked>
+										<label for="radio-one" class="radioLabel">Amigo</label>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<div class="radio">
+										<input type="radio" name="comentarioVisitante" value="redes" id="radio-two" class="form-radio">
+										<label for="radio-two" class="radioLabel">Redes</label>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<div class="radio">
+										<input type="radio" name="comentarioVisitante" value="otro" id="radio-three" class="form-radio">
+										<label for="radio-three" class="radioLabel">Otro</label>
+									</div>
 								</div>
 							</div>
 						</div> 

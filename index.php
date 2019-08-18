@@ -61,6 +61,17 @@
 			}
 		?>
 
+		<?php
+			if(isset($_GET['view'])){
+				if($_GET['view'] == 'visitante'){
+					?>
+						<!-- RadioButton CSS -->
+							<link rel="stylesheet" href="css/radioStyle.css">	
+						<!-- RadioButton CSS -->
+					<?php
+				}
+			}
+		?>
 		<!-- Personal CSS -->
 			<link rel="stylesheet" href="css/main.css">		
 		<!-- Personal CSS -->
