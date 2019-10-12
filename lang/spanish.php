@@ -67,7 +67,19 @@
 					//Programa View
 
 					//Reports View
-						
+						//Visitors
+						'__TITLE_REPORTS_VISITORS__' => "Listado de visitantes",
+						'__VISITOR_NAME__' => 'Nombre',
+						'__VISITOR_PHONE__' => 'Telefono',
+						'__VISITOR_EMAIL__' => 'Correo',
+						'__VISITOR_ADDRESS__' => 'Direccion',
+						'__VISITOR_REGISTERDATE__' => 'Registrado',
+						'__VISITOR_LASTVISIT__' => 'Ultima Visita',
+						'__VISITOR_FOLLOWUP__' => 'Fecha de seguimiento',
+						'__VISITOR_COMMENT__' => 'Comentario',
+						'__FILTER_BDATE_REPORTS__' => "Desde",
+						'__FILTER_ADATE_REPORTS__' => "Hasta",
+						//Visitors
 					//Reports View
 
 					//Admin View	

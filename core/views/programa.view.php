@@ -8,7 +8,7 @@
 		<br>
 		<div class="row">
 			<div class="col-md-12">
-                <form action = "core/controllers/addrecord.controller.php" method="POST" id="requestForm" class="form text-center">	
+                <form action = "core/controllers/addprograma.controller.php" method="POST" id="requestForm" class="form text-center">	
                     <div class="row"> <!-- Date -->
                         <div class="col-md-4 col-sm-4"></div>
                         <div class="col-md-4 col-sm-4">
@@ -33,12 +33,12 @@
 						</div>
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group form-group-lg ">
-								<input type="text" class="form-control text-center" name="verOracion1" id="verOracion1" placeholder="Juan 3:16-18" value="">
+								<input type="text" class="form-control text-center" name="verOracion2" id="verOracion2" placeholder="Juan 3:16-18" value="">
 							</div>
 						</div>
 						<div class="col-md-4 col-sm-4">
 							<div class="form-group form-group-lg ">
-								<input type="text" class="form-control text-center" name="verOracion1" id="verOracion1" placeholder="Juan 3:16-18" value="">
+								<input type="text" class="form-control text-center" name="verOracion3" id="verOracion3" placeholder="Juan 3:16-18" value="">
 							</div>
 						</div>
 					</div> <!-- OracionInicio, VerOracion1-3 -->

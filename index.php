@@ -47,17 +47,26 @@
 
 		<?php
 			if(isset($_GET['view'])){
-				if($_GET['view'] == 'reports'){
+				$view = $_GET['view'];
+				if($view == 'reportVisitantes'){
 					?>
 						<!-- DataTables CSS -->
 							<link rel="stylesheet" href="dataTables/DataTables-1.10.16/css/jquery.dataTables.min.css">
-							<link rel="stylesheet" href="dataTables/Buttons-1.5.1/css/buttons.dataTables.min.css">
+							<!-- <link rel="stylesheet" href="dataTables/Buttons-1.5.1/css/buttons.dataTables.min.css"> -->
 							<link rel="stylesheet" href="dataTables/FixedHeader-3.1.3/css/fixedHeader.dataTables.min.css">
-							<link rel="stylesheet" href="dataTables/ColReorder-1.4.1/css/colReorder.dataTables.min.css">
+							<!-- <link rel="stylesheet" href="dataTables/ColReorder-1.4.1/css/colReorder.dataTables.min.css"> -->
 							<link rel="stylesheet" href="dataTables/Responsive-2.2.1/css/responsive.dataTables.min.css">
 						<!-- DataTables CSS -->
 					<?php
 				}
+
+				//This checks if the actual view has a css with that name
+					if(is_file('css/' . $view . '.css')){
+						?>
+							<link rel="stylesheet" href="css/<?=$view?>.css">	
+						<?php
+					}
+				//This checks if the actual view has a css with that name
 			}
 		?>
 
@@ -110,17 +119,17 @@
 		<!-- Bootstrap JavaScript -->
 		<?php
 			if(isset($_GET['view'])){
-				if($_GET['view'] == 'reports'){
+				if($_GET['view'] == 'reportVisitantes'){
 					?>
 						<!-- DataTables JavaScript -->
 							<script src="dataTables/DataTables-1.10.16/js/jquery.dataTables.min.js"></script>
-							<script src="dataTables/Buttons-1.5.1/js/dataTables.buttons.min.js"></script>
+							<!-- <script src="dataTables/Buttons-1.5.1/js/dataTables.buttons.min.js"></script> -->
 							<script src="dataTables/JSZip-2.5.0/jszip.min.js"></script>
-							<script src="dataTables/pdfmake-0.1.32/pdfmake.min.js"></script>
+							<!-- <script src="dataTables/pdfmake-0.1.32/pdfmake.min.js"></script>
 							<script src="dataTables/pdfmake-0.1.32/vfs_fonts.js"></script>
-							<script src="dataTables/Buttons-1.5.1/js/buttons.html5.min.js"></script>
+							<script src="dataTables/Buttons-1.5.1/js/buttons.html5.min.js"></script> -->
 							<script src="dataTables/FixedHeader-3.1.3/js/dataTables.fixedHeader.min.js"></script>
-							<script src="dataTables/ColReorder-1.4.1/js/dataTables.colReorder.min.js"></script>
+							<!-- <script src="dataTables/ColReorder-1.4.1/js/dataTables.colReorder.min.js"></script> -->
 							<script src="dataTables/Responsive-2.2.1/js/dataTables.responsive.min.js"></script>
 						<!-- DataTables JavaScript -->
 
@@ -139,6 +148,30 @@
 		<div class="header">
 			<nav class="navbar navbar-inverse nav-color">
 				<div class="container-fluid">
+					<!-- Reports Button -->
+						<?php 
+
+							if(isset($_GET['view'])):
+								$view = $_GET['view'];
+								switch ($view):
+								case "visitante":
+						?>	
+							<a href='?view=reportVisitantes'>
+								<button type='button' class='btn btn-default side-button'  aria-label='Left Align' title="reporte">
+								<span class='glyphicon glyphicon-list-alt' aria-hidden='true' ></span>
+								</button>
+							</a>
+						<?php
+							break;
+							
+							default:
+								
+							break;
+
+							endswitch;
+							endif;
+						?>
+					<!-- Reports Button -->
 					<?php if (isLogin()): ?>
 						<!-- Logout Button -->
 							<a href='core/controllers/logout.controller.php'>
@@ -156,7 +189,8 @@
 						<?php endif ?>
 							
 					<?php endif ?>
-					<a class="navbar-brand"><img class="img-responsive"src="img/Logo.png" alt="<?= $language['__INSTITUTION_NAME__'] ?>"></a>
+					<a class="navbar-brand"><?= $language['__INSTITUTION_NAME__']?></a>
+					<!-- <a class="navbar-brand"><img class="img-responsive"src="img/Logo.png" alt="<?= $language['__INSTITUTION_NAME__'] ?>"></a> -->
 				</div>
 			</nav>
 		</div>
@@ -226,15 +260,18 @@
 		</footer>
 	<!--FOOTER-->
 	<?php
-		if(isset($_GET['view'])){
-			if($_GET['view'] == 'reports'){
+		if(isset($_GET['view'])):
+			$view = $_GET['view'];
+			if(is_file('js/' . $view . '.js')):
 				?>
-					<!-- Personal JavaScript -->
-						<script src="js/main.js"></script>
-					<!-- Personal JavaScript -->
+					<script src="js/<?=$view?>.js">	</script>
 				<?php
-			}
-		}
+			endif;
+		endif;
 	?>
+
+		<!-- Personal JavaScript -->
+			<script src="js/main.js"></script>
+		<!-- Personal JavaScript -->
 </body>
 </html>

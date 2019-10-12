@@ -68,19 +68,17 @@
             .big-submit {
                 font-size: 40px;
             }
-            .btn-green {
-                background-color: rgb(4, 144, 65); /* Green color */
-                border-color: black;
-                color: white;
-            }
-            .btn-red {
-                background-color: red; /* Red color */
-                border-color: black;
-                color: white;
-            }
-            .btn-black:hover {
-                background-color: black;
-            }
+             .panel-primary>.panel-heading {
+            color: #fff;
+            background-color:rgb(36,50,100);
+            border-color: rgb(36,50,100); 
+        }
+        .btn-primary{
+            background-color:rgb(36,50,100); 
+        }
+        .panel-primary {
+            border-color: rgb(36,50,100);
+        }
         /*buttons*/
     /*Default VIEW */
 
@@ -183,19 +181,17 @@
             .big-submit {
                 font-size: 40px;
             }
-            .btn-green {
-                background-color: rgb(4, 144, 65); /* Green color */
-                border-color: black;
-                color: white;
-            }
-            .btn-red {
-                background-color: red; /* Red color */
-                border-color: black;
-                color: white;
-            }
-            .btn-black:hover {
-                background-color: black;
-            }
+             .panel-primary>.panel-heading {
+            color: #fff;
+            background-color:rgb(36,50,100);
+            border-color: rgb(36,50,100); 
+        }
+        .btn-primary{
+            background-color:rgb(36,50,100); 
+        }
+        .panel-primary {
+            border-color: rgb(36,50,100);
+        }
         /*buttons*/
     /*Default VIEW */
 

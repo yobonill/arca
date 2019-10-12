@@ -11,7 +11,7 @@
 		function agregar_visitante() {
 
 			//Variables used for the query
-				$recordDate = date('Y-m-d h:i:s');
+				$recordDate = date('Y-m-d');
 				$visitDate = date('Y-m-d');
 				$followupDate = date('Y-m-d');
 				$name = db_quote(strtoupper($_POST['nombreVisitante']));
@@ -44,23 +44,14 @@
 	//------------Function that allows us to add an user to the database------------
 
 	//------------Function that allows us to add an user to the database------------
-		function agregar_visitante() {
-
+		function agregar_programa($fecha,$nombre,$orden,$data1 ="", $data2="",$data3="",$data4="",$data5="",$data6="") {
+			
 			//Variables used for the query
-				$recordDate = date('Y-m-d h:i:s');
-				$visitDate = date('Y-m-d');
-				$followupDate = date('Y-m-d');
-				$name = db_quote(strtoupper($_POST['nombreVisitante']));
-				$lastName = db_quote(strtoupper($_POST['apellidoVisitante']));
-				isset($_POST['telefonoVisitante']) ? $phone = db_quote(strtoupper($_POST['telefonoVisitante'])) : $phone = "";
-				isset($_POST['correoVisitante']) ? $email = db_quote(strtoupper($_POST['correoVisitante'])) : $email = "";
-				isset($_POST['direccionVisitante']) ? $address = db_quote(strtoupper($_POST['direccionVisitante'])) : $address = "";
-				$comment = db_quote(strtoupper($_POST['comentarioVisitante']));
-
+				
 			//Variables used for the query
 
 			//Create a variable containing the query that inserts the user into the database
-				$query = "INSERT INTO visitantes (nombre, apellido, telefono, correo, direccion, fecha_registro, fecha_ult_visita, fecha_seguimiento, comentario) VALUES ('$name','$lastName', '$phone', '$email', '$address', '$recordDate', '$visitDate','$followupDate','$comment')";
+				$query = "INSERT INTO programa (nombre, data1, data2, data3, data4, data5, data6, fecha, orden) VALUES ('$nombre','$data1', '$data2', '$data3', '$data4', '$data5', '$data6','$fecha','$orden')";
 			//Create a variable containing the query that inserts the user into the database
 
 			//Create a variable that runs the query
