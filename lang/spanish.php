@@ -29,9 +29,12 @@
 			//Header texts
 
 			//Content texts
-					//Login View
-						
-					//Login View
+					//Login
+						'__TITLE_LOGIN__' => 'Iniciar Session',
+						'__USERNAME_LOGIN__' => 'Usuario',
+						'__USERPASS_LOGIN__' => 'Contraseña',
+						'__LOGIN_LOGIN__'=> ' Entrar',
+					//Login
 
 					//Default View
 						'__BUTTON1__' => 'Button1',

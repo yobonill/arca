@@ -24,8 +24,6 @@
 			$bDate = date('Y-m-d');
 			$aDate = date('Y-m-d');
 			$records = select_visitors($bDate,$aDate);
-			echo "else";
-			var_dump($records);
 		}
 
 	//Run the function that bring several tables data from the database

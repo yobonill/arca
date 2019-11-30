@@ -1,0 +1,296 @@
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+    /*Header CSS */
+        .title h1{
+            font-size:50px;
+        }
+        hr {
+            border-top: 1px solid #004b04;
+        }
+        .navbar-brand img {
+            height: 100%;
+        }
+        .side-button {
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+            background-color: transparent;
+            color: white;
+            border: 0px;
+        }
+        .back {
+            font-size: 30px;
+            color:rgb(4, 144, 65); ;
+            float: left;
+            z-index: 1;
+        }
+    /*Header CSS */
+
+    /*Content CSS*/
+    
+    /*buttons*/
+        .panel-primary>.panel-heading {
+            color: #fff;
+            background-color:rgb(36,50,100);
+            border-color: rgb(36,50,100); 
+        }
+        .btn-primary{
+            background-color:rgb(36,50,100); 
+        }
+        .panel-primary {
+            border-color: rgb(36,50,100);
+        }
+    /*buttons*/
+
+    /*Footer CSS */
+        footer {
+            padding-top: 80px;
+        }
+    /*Footer CSS */
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+    /*Header CSS */
+        .title h1{
+            font-size:50px;
+        }
+        hr {
+            border-top: 1px solid #004b04;
+        }
+        .navbar-brand img {
+            height: 100%;
+        }
+        .side-button {
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+            background-color: transparent;
+            color: white;
+            border: 0px;
+        }
+        .back {
+            font-size: 30   px;
+            color:rgb(4, 144, 65); ;
+            float: left;
+            z-index: 1;
+        }
+    /*Header CSS */
+
+    /*Content CSS*/
+
+    /*buttons*/
+        .panel-primary>.panel-heading {
+            color: #fff;
+            background-color:rgb(36,50,100);
+            border-color: rgb(36,50,100); 
+        }
+        .btn-primary{
+            background-color:rgb(36,50,100); 
+        }
+        .panel-primary {
+            border-color: rgb(36,50,100);
+        }
+    /*buttons*/
+
+    /*Footer CSS */
+        footer {
+            padding-top: 80px;
+        }
+    /*Footer CSS */
+}
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    /*Header CSS */
+        .title h1{
+            font-size:50px;
+        }
+        hr {
+            border-top: 1px solid #004b04;
+        }
+        .navbar-brand img {
+            height: 100%;
+        }
+        .side-button {
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+            background-color: transparent;
+            color: white;
+            border: 0px;
+        }
+        .back {
+            font-size: 60px;
+            color:rgb(4, 144, 65); ;
+            float: left;
+            z-index: 1;
+        }
+    /*Header CSS */
+
+    /*Content CSS*/
+    
+    /*buttons*/
+        .panel-primary>.panel-heading {
+            color: #fff;
+            background-color:rgb(36,50,100);
+            border-color: rgb(36,50,100); 
+        }
+        .btn-primary{
+            background-color:rgb(36,50,100); 
+        }
+        .panel-primary {
+            border-color: rgb(36,50,100);
+        }
+    /*buttons*/
+
+    /*Footer CSS */
+        footer {
+            padding-top: 80px;
+        }
+    /*Footer CSS */
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+    /*Header CSS */
+        .title h1{
+            font-size:50px;
+        }
+        hr {
+            border-top: 1px solid #004b04;
+        }
+        .navbar-brand img {
+            height: 100%;
+        }
+        .side-button {
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+            background-color: transparent;
+            color: white;
+            border: 0px;
+        }
+        .back {
+            font-size: 60px;
+            color:rgb(4, 144, 65); ;
+            float: left;
+            z-index: 1;
+        }
+    /*Header CSS */
+
+    /*Content CSS*/
+
+    /*buttons*/
+        .panel-primary>.panel-heading {
+            color: #fff;
+            background-color:rgb(36,50,100);
+            border-color: rgb(36,50,100); 
+        }
+        .btn-primary{
+            background-color:rgb(36,50,100); 
+        }
+        .panel-primary {
+            border-color: rgb(36,50,100);
+        }
+    /*buttons*/
+
+    /*Footer CSS */
+        footer {
+            padding-top: 80px;
+        }
+    /*Footer CSS */
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+    /*Header CSS */
+        .title h1{
+            font-size:50px;
+        }
+        hr {
+            border-top: 1px solid #004b04;
+        }
+        .navbar-brand img {
+            height: 100%;
+        }
+        .side-button {
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+            background-color: transparent;
+            color: white;
+            border: 0px;
+        }
+        .back {
+            font-size: 60px;
+            color:rgb(4, 144, 65); ;
+            float: left;
+            z-index: 1;
+        }
+    /*Header CSS */
+
+    /*Content CSS*/
+
+    /*buttons*/
+        .panel-primary>.panel-heading {
+            color: #fff;
+            background-color:rgb(36,50,100);
+            border-color: rgb(36,50,100); 
+        }
+        .btn-primary{
+            background-color:rgb(36,50,100); 
+        }
+        .panel-primary {
+            border-color: rgb(36,50,100);
+        }
+    /*buttons*/
+
+    /*Footer CSS */
+        footer {
+            padding-top: 80px;
+        }
+    /*Footer CSS */
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+
+    /*Header CSS */
+        .title h1{
+            font-size:50px;
+        }
+        hr {
+            border-top: 1px solid #004b04;
+        }
+        .navbar-brand img {
+            height: 100%;
+        }
+        .side-button {
+            float: right;
+            margin-top: 10px;
+            margin-right: 20px;
+            background-color: transparent;
+            color: white;
+            border: 0px;
+        }
+        .back {
+            font-size: 60px;
+            color:rgb(4, 144, 65); ;
+            float: left;
+            z-index: 1;
+        }
+    /*Header CSS */
+
+    /*Content CSS*/
+
+    /*buttons*/
+        .panel-primary>.panel-heading {
+            color: #fff;
+            background-color:rgb(36,50,100);
+            border-color: rgb(36,50,100); 
+        }
+        .btn-primary{
+            background-color:rgb(36,50,100); 
+        }
+        .panel-primary {
+            border-color: rgb(36,50,100);
+        }
+    /*buttons*/
+
+    /*Footer CSS */
+        footer {
+            padding-top: 80px;
+        }
+    /*Footer CSS */
+}

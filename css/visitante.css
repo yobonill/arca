@@ -1,0 +1,71 @@
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+    /*Content*/
+
+    /*Content*/
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.  */
+    /*Content*/
+
+    /*Content*/
+
+}
+
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    /*Content*/
+
+    /*Content*/
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    /*Content*/
+        label{
+            font-size: 50px;
+        }
+        .orden label{
+            font-size: 20px;
+        }
+        .form-group-lg .form-control {
+            height: 80px;
+            font-size: 25px;
+        }
+        #submit {
+            height: 60px;
+            font-size: 25px;
+        }
+        .title{
+            float: none;
+        }
+        h1{
+            margin-top: 0px;
+        }
+    /*Content*/
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+    /*Content*/
+        label{
+            font-size: 50px;
+        }
+        .orden label{
+            font-size: 20px;
+        }
+        .form-group-lg .form-control {
+            height: 80px;
+            font-size: 25px;
+        }
+        #submit {
+            height: 60px;
+            font-size: 25px;
+        }
+        .title{
+            float: none;
+        }
+        h1{
+            margin-top: 0px;
+        }
+    /*Content*/
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */
+    /*Content*/
+        
+    /*Content*/
+}
+

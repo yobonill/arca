@@ -82,7 +82,7 @@
 			}
 		?>
 		<!-- Personal CSS -->
-			<link rel="stylesheet" href="css/main.css">		
+			<link rel="stylesheet" href="css/general.css">		
 		<!-- Personal CSS -->
 
 	<!-- CSS AND FONTS -->
@@ -172,12 +172,66 @@
 							endif;
 						?>
 					<!-- Reports Button -->
+						<?php if(isLogin()): ?>
+							<a href='#' class='btn btn-default side-button' data-toggle ="modal">
+								<span class='glyphicon glyphicon-user' aria-hidden='true'><?= ' ' . $_SESSION['name'] . ' ' . $_SESSION['lastname']  ?></span>
+							</a>
+						<?php else: ?>
+							<a href='#login-modal' class='btn btn-default side-button' data-toggle ="modal">
+								<span class='glyphicon glyphicon-user' aria-hidden='true'><?= $language['__LOGIN_LOGIN__']?></span>
+							</a>
+							<!-- Login Modal -->
+								<div class="modal fade" id="login-modal">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+											</div>
+											<div class="modal-body">
+												<form action="#" method="POST" class="form-horizontal" role="form">
+													<h3 class="text-center"><?= $language['__TITLE_LOGIN__'] ?></h3>
+													<hr>
+													<div class="row">
+														<div class="col-md-4 col-xs-4"></div>
+														<div class="col-md-4 col-xs-4 text-center">
+															<label for="usr"><?= $language['__USERNAME_LOGIN__'] ?></label>
+															<input type="text" name="user" id="inputUsr" class="form-control text-center" value="" required="required">
+														</div>
+														<div class="col-md-4 col-xs-4"></div>
+													</div>
+													<div class="row">
+														<div class="col-md-4 col-xs-4"></div>
+														<div class="col-md-4 col-xs-4 text-center">
+															<label for="pass"><?= $language['__USERPASS_LOGIN__'] ?></label>
+															<input type="password" name="pass" id="inputPass" class="form-control text-center" value="" required="required">
+														</div>
+														<div class="col-md-4 col-xs-4"></div>
+													</div>
+													<br>
+													<div class="form-group">
+														<div class="col-md-4 col-xs-4"></div>
+														<div class="col-md-4 col-xs-4 text-center">
+															<button type="submit" class="btn btn-primary"><?= $language['__LOGIN_LOGIN__'] ?></button>
+														</div>
+														<div class="col-md-4 col-xs-4"></div>
+													</div>
+												</form>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-danger redBgScheme" data-dismiss="modal"><?= $language['__CLOSE_MODAL__'] ?></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							<!-- Login Modal -->
+						<?php endif ?>
+					<!-- LOGIN BUTTON -->
 					<?php if (isLogin()): ?>
 						<!-- Logout Button -->
 							<a href='core/controllers/logout.controller.php'>
-								<button type='button' class='btn btn-default side-button poweroff'  aria-label='Left Align'>											<span class='glyphicon glyphicon-off' 		aria-hidden='true'></span>
+								<button type='button' class='btn btn-default side-button poweroff whiteScheme'  aria-label='Left Align'>											<span class='glyphicon glyphicon-off' 		aria-hidden='true'></span>
 								</button>
-							</a>
+								</a>
 						<!-- Logout Button -->
 						<?php if (isAdmin()): ?>
 							
@@ -231,7 +285,7 @@
 						if ($view != 'default' and $view != 'login') {
 						?>
 							<script type="text/javascript">
-								$("#content").append("<a href='index.php'><span class='glyphicon glyphicon-arrow-left back' aria-hidden='true'></span></a>");
+								$("#content").append("<a href='index.php?view=default'><span class='glyphicon glyphicon-arrow-left back' aria-hidden='true'></span></a>");
 							</script>
 						<?php 
 						}
@@ -253,7 +307,7 @@
 		<footer>
 			<nav class="navbar navbar-inverse navbar-fixed-bottom">
 				<div class="container-fluid">
-					<p class="navbar-text"><?= $language['__SIGN__']?></p>
+					<!-- <p class="navbar-text"><?= $language['__SIGN__']?></p> -->
 					<a class="navbar-brand"><?= $language['__INSTITUTION_NAME__']?></a>  	
 				</div>
 			</nav>
@@ -271,7 +325,7 @@
 	?>
 
 		<!-- Personal JavaScript -->
-			<script src="js/main.js"></script>
+			<script src="js/general.js"></script>
 		<!-- Personal JavaScript -->
 </body>
 </html>
